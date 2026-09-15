@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -23,7 +23,7 @@ import {
    ANIMATION VARIANTS
 ========================================================= */
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: {
     opacity: 0,
     y: 45,
@@ -38,7 +38,7 @@ const fadeUp = {
   },
 };
 
-const fadeLeft = {
+const fadeLeft: Variants = {
   hidden: {
     opacity: 0,
     x: -45,
@@ -53,7 +53,7 @@ const fadeLeft = {
   },
 };
 
-const fadeRight = {
+const fadeRight: Variants = {
   hidden: {
     opacity: 0,
     x: 45,
@@ -68,7 +68,7 @@ const fadeRight = {
   },
 };
 
-const scaleIn = {
+const scaleIn: Variants = {
   hidden: {
     opacity: 0,
     scale: 0.94,
@@ -83,7 +83,7 @@ const scaleIn = {
   },
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: {},
   visible: {
     transition: {

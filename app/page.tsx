@@ -36,13 +36,13 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
             >
               {/* Availability */}
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.15 }}
+                transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
                 className="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 dark:border-cyan-900/60 dark:bg-cyan-950/30"
               >
                 <span className="relative flex h-2 w-2">
@@ -59,7 +59,7 @@ export default function Home() {
               <motion.p
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.25 }}
+                transition={{ duration: 0.5, delay: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
                 className="text-lg font-medium text-slate-500 dark:text-slate-400"
               >
                 Hello, I&apos;m
@@ -69,7 +69,7 @@ export default function Home() {
               <motion.h1
                 initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.3 }}
+                transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                 className="mt-3 text-5xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-6xl md:text-7xl"
               >
                 Harshnil
@@ -82,7 +82,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.45 }}
+                transition={{ duration: 0.6, delay: 0.45, ease: [0.25, 0.1, 0.25, 1] }}
                 className="mt-6 flex items-center gap-4"
               >
                 <div className="h-px w-10 bg-cyan-500" />
@@ -167,7 +167,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: 50, scale: 0.95 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
-              transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
+              transition={{ duration: 0.9, delay: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
               className="relative mx-auto w-full max-w-lg"
             >
               {/* Outer Glow */}
@@ -179,7 +179,7 @@ export default function Home() {
                 transition={{
                   duration: 5,
                   repeat: Infinity,
-                  ease: "easeInOut",
+                  ease: [0.25, 0.1, 0.25, 1],
                 }}
                 className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 p-5 shadow-2xl dark:border-slate-800 dark:bg-slate-900"
               >
@@ -448,7 +448,7 @@ export default function Home() {
                 hidden: { opacity: 0, x: -35 },
                 visible: { opacity: 1, x: 0 },
               }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
             >
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
                 About Me
@@ -481,13 +481,13 @@ export default function Home() {
                 hidden: { opacity: 0, x: 35 },
                 visible: { opacity: 1, x: 0 },
               }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
               className="space-y-6"
             >
               {/* Main Description */}
               <motion.div
                 whileHover={{ y: -3 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                 className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition-shadow duration-300 hover:shadow-lg hover:shadow-cyan-500/5 dark:border-slate-800 dark:bg-slate-950 md:p-9"
               >
                 <p className="text-base leading-8 text-slate-600 dark:text-slate-400">
@@ -608,7 +608,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
             className="mb-14 max-w-2xl"
           >
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
@@ -817,7 +817,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
             className="mb-14 max-w-2xl"
           >
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
@@ -847,7 +847,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
             whileHover={{ y: -4 }}
             className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:border-cyan-400/40 hover:shadow-xl hover:shadow-cyan-500/5 dark:border-slate-800 dark:bg-slate-950"
           >
@@ -1091,7 +1091,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
             className="mb-14 max-w-2xl"
           >
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
@@ -1124,7 +1124,7 @@ export default function Home() {
               initial={{ height: 0 }}
               whileInView={{ height: "calc(100% - 24px)" }}
               viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
+              transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
               className="absolute left-[11px] top-3 hidden w-px bg-slate-200 dark:bg-slate-800 md:block"
             />
 
@@ -1135,7 +1135,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: -35 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
+                transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
                 className="relative md:pl-12"
               >
                 {/* Timeline Dot */}
@@ -1143,14 +1143,14 @@ export default function Home() {
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.2 }}
+                  transition={{ duration: 0.4, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
                   className="absolute left-0 top-8 hidden h-6 w-6 items-center justify-center rounded-full border-4 border-white bg-cyan-500 shadow-lg shadow-cyan-500/20 dark:border-[#05091b] md:flex"
                 />
 
                 {/* Card */}
                 <motion.div
                   whileHover={{ y: -5 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                   className="rounded-3xl border border-cyan-200/70 bg-white p-7 shadow-sm transition-all duration-300 hover:border-cyan-400/60 hover:shadow-xl hover:shadow-cyan-500/5 dark:border-cyan-400/20 dark:bg-slate-950 md:p-9"
                 >
                   <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
@@ -1189,7 +1189,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: -35 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
+                transition={{ duration: 0.7, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
                 className="relative md:pl-12"
               >
                 {/* Timeline Dot */}
@@ -1197,14 +1197,14 @@ export default function Home() {
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.3 }}
+                  transition={{ duration: 0.4, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                   className="absolute left-0 top-8 hidden h-6 w-6 items-center justify-center rounded-full border-4 border-white bg-slate-400 dark:border-[#05091b] dark:bg-slate-600 md:flex"
                 />
 
                 {/* Card */}
                 <motion.div
                   whileHover={{ y: -5 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                   className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:border-cyan-400/50 hover:shadow-xl hover:shadow-cyan-500/5 dark:border-slate-800 dark:bg-slate-950 md:p-9"
                 >
                   <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
@@ -1243,7 +1243,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: -35 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+                transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
                 className="relative md:pl-12"
               >
                 {/* Timeline Dot */}
@@ -1251,14 +1251,14 @@ export default function Home() {
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.4 }}
+                  transition={{ duration: 0.4, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
                   className="absolute left-0 top-8 hidden h-6 w-6 items-center justify-center rounded-full border-4 border-white bg-slate-400 dark:border-[#05091b] dark:bg-slate-600 md:flex"
                 />
 
                 {/* Card */}
                 <motion.div
                   whileHover={{ y: -5 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                   className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:border-cyan-400/50 hover:shadow-xl hover:shadow-cyan-500/5 dark:border-slate-800 dark:bg-slate-950 md:p-9"
                 >
                   <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
@@ -1326,7 +1326,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
               whileHover={{ y: -8 }}
               className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-900"
             >
@@ -1389,7 +1389,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.15 }}
+              transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
               whileHover={{ y: -8 }}
               className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-900"
             >
@@ -1464,7 +1464,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -35 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
             >
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
                 My Resume
@@ -1533,7 +1533,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 40, scale: 0.95 }}
               whileInView={{ opacity: 1, x: 0, scale: 1 }}
               viewport={{ once: true, amount: 0.15 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
+              transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
               className="relative"
             >
 
@@ -1546,7 +1546,7 @@ export default function Home() {
                 transition={{
                   duration: 5,
                   repeat: Infinity,
-                  ease: "easeInOut",
+                  ease: [0.25, 0.1, 0.25, 1],
                 }}
                 className="absolute -inset-5 rounded-[2rem] bg-cyan-500/10 blur-3xl"
               />
@@ -1557,7 +1557,7 @@ export default function Home() {
                   rotate: 0,
                   y: -6,
                 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
+                transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
                 className="relative mx-auto max-w-md rotate-1 overflow-hidden rounded-2xl border border-slate-200 bg-white p-7 shadow-2xl dark:border-slate-700"
               >
 
@@ -1639,7 +1639,7 @@ export default function Home() {
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.5 }}
+                      transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
                       className="rounded-xl border border-slate-100 bg-slate-50 p-3"
                     >
                       <div className="text-[10px] font-semibold text-slate-800">
@@ -1729,7 +1729,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
             className="mb-14 max-w-3xl"
           >
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
@@ -1765,7 +1765,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -35 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.15 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
               whileHover={{ y: -5 }}
               className="rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/5 dark:border-slate-800 dark:bg-slate-950 md:p-9"
             >
@@ -1780,7 +1780,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
+                  transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
                 >
                   <p className="text-xs font-semibold uppercase tracking-wider text-cyan-600 dark:text-cyan-400">
                     Email
@@ -1870,7 +1870,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 35 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.15 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
               whileHover={{ y: -5 }}
               className="rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/5 dark:border-slate-800 dark:bg-slate-950 md:p-9"
             >
