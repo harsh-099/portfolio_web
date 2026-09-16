@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Harshnil Patil — Portfolio Website
 
-## Getting Started
+A modern and responsive personal portfolio website showcasing my skills, projects, experience, and journey as a Full Stack Developer.
 
-First, run the development server:
+🌐 **Live Portfolio:**  
+https://harshnilpatilportfolio.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 👨‍💻 About
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This portfolio website is designed to showcase my technical skills, featured projects, and professional profile in a clean and modern interface.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+It provides an overview of my development experience and the technologies I use to build real-world web applications.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🎨 Modern and responsive UI
+- 👨‍💻 Professional developer profile
+- 🛠️ Technical skills showcase
+- 🚀 Featured projects section
+- 📄 Resume section
+- 🔗 Social media and professional links
+- 📱 Mobile-friendly design
+- ⚡ Fast and optimized web experience
+- 🌐 Live project demonstrations
+- 📬 Contact section
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Frontend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js
+- React
+- TypeScript
+- HTML5
+- CSS3
+- JavaScript
+
+### Tools & Deployment
+
+- Git
+- GitHub
+- VS Code
+- Vercel
+
+---
+
+## 🚀 Featured Projects
+
+### 🏪 Jay Bhole Pipe & Hardware Shop ERP
+
+A Django-based ERP system designed to manage hardware shop operations including products, inventory, billing, customers, suppliers, purchases, Udhari, expenses and reports.
+
+🔗 **Live Demo:**  
+https://jaybholeshop-five.vercel.app/
+
+🔗 **GitHub Repository:**  
+https://github.com/harsh-099/Jay_Bhole_pipe_and_hardware_shop_ERP
+
+---
+
+### 🎮 Tic Tac Toe Game
+
+A web-based Tic Tac Toe game built with a clean and interactive interface.
+
+🔗**Live Demo:**
+https://tic-tac-toe-game-hp.vercel.app/
+
+
+🔗 **GitHub Repository:**  
+https://github.com/harsh-099/Tic_Tac_Toe_Game
+
+---
+
+### 📝 Online Examination System
+
+A Django-based online examination platform with student authentication, exams, questions, results and examination management features.
+
+🔗 **GitHub Repository:**  
+https://github.com/harsh-099/online_examination_system
+
+---
+
+## 📚 Skills
+
+- Python
+- Django
+- Java
+- SQL
+- JavaScript
+- TypeScript
+- React
+- Next.js
+- HTML
+- CSS
+- Bootstrap
+- Git & GitHub
+
+---
+
+## 🎯 Career Objective
+
+Aspiring Full Stack Developer passionate about building practical and user-friendly web applications using modern technologies.
+
+I enjoy learning new technologies, solving real-world problems, and continuously improving my development skills.
+
+---
+
+## 📬 Connect With Me
+
+**GitHub**  
+https://github.com/harsh-099
+
+**LinkedIn**  
+https://www.linkedin.com/in/harshnilpatil/
+
+**Portfolio**  
+https://harshnilpatilportfolio.vercel.app/
+
+---
+
+## ⭐ Support
+
+If you find my projects interesting, feel free to explore my repositories and connect with me.
+
+⭐ **Thanks for visiting my portfolio repository!**
