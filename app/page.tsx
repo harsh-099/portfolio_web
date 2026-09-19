@@ -163,17 +163,35 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* ================= RIGHT VISUAL ================= */}
+            {/* ================= RIGHT PROFILE IMAGE ================= */}
             <motion.div
               initial={{ opacity: 0, x: 50, scale: 0.95 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
-              transition={{ duration: 0.9, delay: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
-              className="relative mx-auto w-full max-w-lg"
+              transition={{
+                duration: 0.9,
+                delay: 0.25,
+                ease: [0.25, 0.1, 0.25, 1],
+              }}
+              className="relative mx-auto flex w-full max-w-lg justify-center"
             >
               {/* Outer Glow */}
-              <div className="absolute -inset-6 rounded-[3rem] bg-cyan-400/10 blur-3xl dark:bg-cyan-500/10" />
+              <div className="absolute -inset-10 rounded-[4rem] bg-cyan-400/10 blur-3xl dark:bg-cyan-500/10" />
 
-              {/* Floating Card */}
+              {/* Decorative Circle */}
+              <motion.div
+                animate={{
+                  scale: [1, 1.08, 1],
+                  opacity: [0.2, 0.35, 0.2],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: [0.25, 0.1, 0.25, 1],
+                }}
+                className="absolute right-10 top-10 h-28 w-28 rounded-full border border-cyan-400/20 bg-cyan-400/5 blur-sm"
+              />
+
+              {/* Profile Wrapper */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{
@@ -181,133 +199,34 @@ export default function Home() {
                   repeat: Infinity,
                   ease: [0.25, 0.1, 0.25, 1],
                 }}
-                className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 p-5 shadow-2xl dark:border-slate-800 dark:bg-slate-900"
+                className="relative z-10"
               >
-                {/* Browser Header */}
-                <div className="flex items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 dark:border-slate-800 dark:bg-slate-950">
+                {/* ================= PROFILE PHOTO CARD ================= */}
+                <div className="relative mx-auto h-[340px] w-[260px] overflow-hidden rounded-[2.25rem] border border-slate-200 bg-slate-100 shadow-2xl shadow-slate-300/30 transition-colors duration-500 dark:border-slate-700 dark:bg-slate-950 dark:shadow-black/30">
 
-                  <div className="flex gap-1.5">
-                    <span className="h-2.5 w-2.5 rounded-full bg-slate-300 dark:bg-slate-700" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-slate-300 dark:bg-slate-700" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-slate-300 dark:bg-slate-700" />
-                  </div>
+                  {/* Profile Image */}
+                  <Image
+                    src="/images/harshnil-profile-new.png"
+                    alt="Harshnil Patil - Software Developer"
+                    fill
+                    priority
+                    sizes="260px"
+                    className="object-cover object-top transition-transform duration-700 hover:scale-[1.03]"
+                  />
 
-                  <div className="rounded-md bg-slate-100 px-4 py-1.5 text-[10px] text-slate-400 dark:bg-slate-800">
-                    portfolio.dev
-                  </div>
+                  {/* Bottom Fade */}
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-100/80 via-slate-100/20 to-transparent transition-colors duration-500 dark:from-slate-950/80 dark:via-slate-950/20" />
 
-                  <div className="w-8" />
-                </div>
-
-                {/* Code Window */}
-                <div className="mt-5 rounded-2xl bg-slate-950 p-6 shadow-inner dark:bg-black">
-
-                  <div className="flex gap-2 text-xs text-slate-500">
-                    <span>01</span>
-                    <span className="text-cyan-400">
-                      &lt;developer&gt;
-                    </span>
-                  </div>
-
-                  <div className="mt-5 pl-5 text-sm leading-8">
-
-                    <p className="text-slate-500">
-                      <span className="text-cyan-400">const</span>{" "}
-                      <span className="text-white">developer</span>{" "}
-                      = {"{"}
-                    </p>
-
-                    <p className="pl-5 text-slate-400">
-                      name:{" "}
-                      <span className="text-cyan-300">
-                        &quot;Harshnil Patil&quot;
-                      </span>
-                    </p>
-
-                    <p className="pl-5 text-slate-400">
-                      role:{" "}
-                      <span className="text-cyan-300">
-                        &quot;Software Developer&quot;
-                      </span>
-                    </p>
-
-                    <p className="pl-5 text-slate-400">
-                      passion:{" "}
-                      <span className="text-cyan-300">
-                        &quot;Building Software&quot;
-                      </span>
-                    </p>
-
-                    <p className="text-slate-500">
-                      {"};"}
-                    </p>
-                  </div>
-
-                  {/* Terminal */}
-                  <div className="mt-7 rounded-xl border border-slate-800 bg-slate-900 p-4">
-
-                    <p className="text-xs text-slate-500">
-                      ~/harshnil/portfolio
-                    </p>
-
-                    <p className="mt-2 text-sm text-slate-300">
-                      <span className="text-cyan-400">$</span>{" "}
-                      building something meaningful...
-                    </p>
-
-                    <div className="mt-3 h-1.5 w-24 overflow-hidden rounded-full bg-slate-800">
-                      <motion.div
-                        initial={{ width: "0%" }}
-                        animate={{ width: "66.666667%" }}
-                        transition={{ duration: 1.5, delay: 1 }}
-                        className="h-full rounded-full bg-cyan-400"
-                      />
-                    </div>
+                  {/* Small Photo Label */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/10 bg-slate-950/70 px-4 py-2 text-xs font-medium text-white backdrop-blur-md">
+                    Software Developer
                   </div>
                 </div>
 
-                {/* Bottom Tags */}
-                <div className="mt-5 grid grid-cols-3 gap-3">
-
-                  <motion.div
-                    whileHover={{ y: -4 }}
-                    className="rounded-xl border border-slate-200 bg-white p-3 text-center transition-colors duration-300 hover:border-cyan-400 dark:border-slate-800 dark:bg-slate-950"
-                  >
-                    <p className="text-xs font-semibold text-slate-900 dark:text-white">
-                      Java
-                    </p>
-                    <p className="mt-1 text-[10px] text-slate-400">
-                      Backend
-                    </p>
-                  </motion.div>
-
-                  <motion.div
-                    whileHover={{ y: -4 }}
-                    className="rounded-xl border border-slate-200 bg-white p-3 text-center transition-colors duration-300 hover:border-cyan-400 dark:border-slate-800 dark:bg-slate-950"
-                  >
-                    <p className="text-xs font-semibold text-slate-900 dark:text-white">
-                      Python
-                    </p>
-                    <p className="mt-1 text-[10px] text-slate-400">
-                      Development
-                    </p>
-                  </motion.div>
-
-                  <motion.div
-                    whileHover={{ y: -4 }}
-                    className="rounded-xl border border-slate-200 bg-white p-3 text-center transition-colors duration-300 hover:border-cyan-400 dark:border-slate-800 dark:bg-slate-950"
-                  >
-                    <p className="text-xs font-semibold text-slate-900 dark:text-white">
-                      Django
-                    </p>
-                    <p className="mt-1 text-[10px] text-slate-400">
-                      Framework
-                    </p>
-                  </motion.div>
-
-                </div>
+                
               </motion.div>
             </motion.div>
+
 
           </div>
         </div>
